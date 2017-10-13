@@ -32,6 +32,11 @@ module.exports = () => {
                         options: { template: 'fancy' }
                     }
                 ]
+            },
+            // Use raw loader to get the HTML string contents of examples
+            {
+                test: /\.html$/,
+                use: 'raw-loader'
             }
         ],
         webpackPlugins: [
